@@ -1,0 +1,229 @@
+/* GENERAL STYLING */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* NAVIGATION MENU */
+nav {
+    background-color: #182c4d;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* MOVING NAME */
+.moving-name {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 20px 0;
+}
+
+.moving-name span {
+    display: inline-block;
+    font-size: 48px;
+    font-weight: bold;
+    color: #182c4d;
+    animation: moving 10s linear infinite;
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100vw);
+    }
+}
+
+/* CONTACT PAGE */
+.contact-page {
+    background-color: white;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1400px;
+    text-align: left;
+    min-height: 500px;
+}
+
+/* HEADINGS */
+.contact-page h1 {
+    color: #182c4d;
+    font-size: 40px;
+}
+
+.contact-page h2 {
+    color: #182c4d;
+    font-size: 32px;
+}
+
+/* CONTACT INFORMATION */
+.contact-page p {
+    font-size: 20px;
+    margin: 25px 0;
+}
+
+.contact-page a {
+    color: #315b91;
+}
+
+.contact-page a:hover {
+    color: red;
+}
+
+/* HORIZONTAL LINE */
+.contact-page hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 35px 0;
+}
+
+/* CONTACT FORM BOX */
+.contact-box {
+    border: 2px solid #999;
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 30px;
+    width: 100%;
+    min-height: 650px;
+}
+
+.contact-box form {
+    width: 100%;
+}
+
+/* FORM LABELS */
+.contact-box label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #263b58;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+/* INPUT BOXES */
+.contact-box input:not([type="checkbox"]) {
+    width: 100%;
+    height: 60px;
+    padding: 15px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* MESSAGE BOX */
+.contact-box textarea {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 18px;
+    resize: vertical;
+}
+
+/* CHECKBOX */
+.checkbox-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.checkbox-area input {
+    width: 22px;
+    height: 22px;
+}
+
+.checkbox-area label {
+    margin: 0;
+    font-size: 17px;
+}
+
+/* SEND BUTTON */
+.contact-box button {
+    background-color: green;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.contact-box button:hover {
+    background-color: darkgreen;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 600px) {
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+        font-size: 15px;
+    }
+
+    .contact-page {
+        padding: 15px;
+    }
+
+    .contact-page h1 {
+        font-size: 30px;
+    }
+
+    .contact-page h2 {
+        font-size: 25px;
+    }
+
+    .contact-box {
+        padding: 15px;
+    }
+
+    .contact-box input:not([type="checkbox"]) {
+        height: 50px;
+    }
+
+    .contact-box textarea {
+        height: 220px;
+    }
+
+    .moving-name span {
+        font-size: 36px;
+    }
+}
